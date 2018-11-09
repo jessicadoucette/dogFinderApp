@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DogFinder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	 crossorigin="anonymous">
+	<link rel="icon" type="image/ico" href="/images/favicon.ico">
+	<style>
+		#dogImage {
+			width: 400px;
+			margin-bottom: 20px;
+		}; 
+	</style>
+</head>
+
+<body>
+	<div class="container" style="padding-top: 40px;">
+		<h1><span class="fas fa-list-alt"></span> Survey Questions</h1>
+		<hr>
+		<h3>About Your Dog</h3>
+	</div>
+	<!-- text form -->
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="name">Your Dog's Name (Required)</label>
+				<input value="Lucy" type="text" class="form-control" id="name">
+
+			</div>
+			<div class="form-group">
+				<label for="photo">Link to Photo Image (Required)</label>
+				<input value="https://" type="text" class="form-control" id="photo">
+			</div>
+			<!-- 10 questions -->
+			<!-- Question 1 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 1</h3>
+			<div class="form-group">
+				<label for="question1">Your dog is relaxed when greeting people.</label>
+				<select class="survey-question form-control" id="question1">
+					<option >Please Select</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<!-- Question 2 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 2</h3>
+			<div class="form-group">
+				<label for="question2">Your dog enjoys playing with other dogs.</label>
+				<select class="survey-question form-control" id="question2">
+					<option >Please Select</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<!-- Question 3 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 3</h3>
+			<div class="form-group">
+				<label for="question3">Your dog seeks constant activity.</label>
+				<select class="survey-question form-control" id="question3">
+					<option >Please Select</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<!-- Question 4 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 4</h3>
+			<div class="form-group">
+				<label for="question4">Your Dog likes to chase squirrels, birds, or other small animals.</label>
+				<select class="survey-question form-control" id="question4">
+					<option >Please Select</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<!-- Question 5 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 5</h3>
+			<div class="form-group">
+				<label for="question5">Your Dog is confident.</label>
+				<select class="survey-question form-control" id="question5">
+					<option >Please Select</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<!-- Question 6 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 6</h3>
+			<div class="form-group">
+				<label for="question6">Your Dog is friendly towards unfamiliar people.</label>
+				<select class="survey-question form-control" id="question6">
+					<option >Please Select</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<!-- Question 7 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 7</h3>
+			<div class="form-group">
+				<label for="question7">Your Dog is quick to sneak out through open doors, gates.</label>
+				<select class="survey-question form-control" id="question7">
+					<option >Please Select</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<!-- Question 8 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 8</h3>
+			<div class="form-group">
+				<label for="question8">Your Dog adapts easily to new situations and environments.</label>
+				<select class="survey-question form-control" id="question8">
+					<option >Please Select</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<!-- Question 9 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 9</h3>
+			<div class="form-group">
+				<label for="question9">Your Dog adapts easily to new situations and environments.</label>
+				<select class="survey-question form-control" id="question9">
+					<option >Please Select</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<!-- Question 10 -->
+			<hr style="margin: 30px 0;">
+			<h3>Question 10</h3>
+			<div class="form-group">
+				<label for="question10">Your Dog aggressively guards coveted items (e.g., stolen item, treats, food bowl).</label>
+				<select class="survey-question form-control" id="question10">
+					<option >Please Select</option>
+					<option selected value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<button type="button" class="btn btn-success btn-lg btn-block submit" style="margin: 30px 0;" data-toggle="modal"
+			 data-target="#modal">Submit <span class="fas fa-arrow-right"></span></button>
+		</form>
+	</div>
+
+
+	<footer class="footer">
+		<div class="container">
+			<p><a href="/api/dogs">API Dog Link</a> | <a href="https://github.com/jessicadoucette/dogFinder">GitHub Repo</a>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="dogModal-title"></h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-bio"></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<!-- bootstrap JS -->
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+$(".submit").on("click", function (event) {
+	event.preventDefault();
+	let userAnswers = [
+	// name= $("#name").val().trim(),
+	// 	photo= $("#photo").val().trim(),
+		question1= parseInt($('#question1').val()),
+		question2= parseInt($('#question2').val()),
+		question3= parseInt($('#question3').val()),
+		question4= parseInt($('#question4').val()),
+		question5= parseInt($('#question5').val()),
+		question6= parseInt($('#question6').val()),
+		question7= parseInt($('#question7').val()),
+		question8= parseInt($('#question8').val()),
+		question9= parseInt($('#question9').val()),
+		question10= parseInt($('#question10').val()) 
+]; 
+
+	//send to server so it can look at dogs and answers and send back best dog
+//req.body has to be an object.
+	$.post("/api/dogs", {userAnswers: userAnswers}, function(dogMatch) {
+		console.log(userAnswers); 
+		console.log(dogMatch); 
+		if(dogMatch) {
+		$(".modal-title").text(dogMatch.name); 
+		$(".modal-body").html('<img src=' + dogMatch.photo + 'alt="Dog Image" id="dogImage">' + '<br>' + '<h3>Hi! My name is ' + dogMatch.name + '. Yer a real catch!</h3>');
+		$("#modal").modal("toggle"); 
+	} else {
+		alert("Please fill out all fields before submitting."); 
+	}
+	})
+}); 
+
+//form validation -- cannot figure this part out.
+
+//storing user input
+// var newDog = {
+// 		name: $("#name").val().trim(),
+// 		photo: $("#photo").val().trim(),
+// 		question1: parseInt($('#question1').val()),
+// 		question2: parseInt($('#question2').val()),
+// 		question3: parseInt($('#question3').val()),
+// 		question4: parseInt($('#question4').val()),
+// 		question5: parseInt($('#question5').val()),
+// 		question6: parseInt($('#question6').val()),
+// 		question7: parseInt($('#question7').val()),
+// 		question8: parseInt($('#question8').val()),
+// 		question9: parseInt($('#question9').val()),
+// 		question10: parseInt($('#question10').val()) 
+// };
+
+// console.log("New Dog: " + newDog); 
+
+// $.post("api/dogs", newDog, function(data) {
+// 	if(data) {
+// 		$(".modal-title").text(data.name); 
+// 		$(".modal-image").attr("src", data.photo);
+// 		$("#modal").modal("toggle"); 
+// 	} else {
+// 		alert("Please fill out all fields before submitting.")
+// 	}
+// })
+
+
+// });  
+
+
+
+
+
+
+</script>
+ <!-- // 	var name;
+// 	var photo;
+// 	var question1;
+// 	var question2;
+// 	var question3;
+// 	var question4;
+// 	var question5;
+// 	var question6;
+// 	var question7;
+// 	var question8;
+// 	var question9;
+// 	var question10;
+// 	var newDog;
+// 	var myTotal = 0;
+// 	// console.log(dogList); 
+// 	$(".submit").on("click", function (event) {
+// 		event.preventDefault();
+// 		// const answers = $('.survey-question');
+// 		// console.log('ANSWERS: ', answers);
+// 		// for (let i = 0; i < answers.length; i++) {
+// 		// 	myTotal += parseInt(answers[i].value);
+// 		// 	console.log('TOTAL: ', myTotal);
+// 		// }
+// 		console.log("submit button works")
+// 		// Grab the form elements
+// 		name = $("#name").val().trim();
+// 		photo = $("#photo").val().trim();
+// 		question1 = parseInt($('#question1').val());
+// 		question2 = parseInt($('#question2').val());
+// 		question3 = parseInt($('#question3').val());
+// 		question4 = parseInt($('#question4').val());
+// 		question5 = parseInt($('#question5').val());
+// 		question6 = parseInt($('#question6').val());
+// 		question7 = parseInt($('#question7').val());
+// 		question8 = parseInt($('#question8').val());
+// 		question9 = parseInt($('#question9').val());
+// 		question10 = parseInt($('#question10').val());
+// 		newDog = {
+// 			name: name,
+// 			photo: photo,
+// 			response: [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10],
+// 			total: question1 + question2 + question3 + question4 + question5 + question6 + question7 + question8 + question9 + question10
+// 		};
+// 		console.log(newDog);
+// 		// if (
+// 		// 	(name !== '') && (photo !== '') && (!isNaN(question1)) && (!isNaN(question2)) && (!isNaN(question3)) && (!isNaN(question4)) && (!isNaN(question5)) && (!isNaN(question6)) && (!isNaN(question7)) && (!isNaN(question8)) && (!isNaN(question9)) && (!isNaN(question10))
+// 		// ) {
+// 		// }
+// 		//dogModal
+// 		var modal = $('#modal');
+// 		var dogModalTitle = $('#dogModal-title');
+// 		var modalBody = $('.modal-body');
+// 		var apiDogRoute = '/api/dogs';
+// 		if (formIsValid()) {
+// 			// $.ajax({ url: '/api/dogs', method: "GET" })
+// 			// .then(function(survey) {
+// 			$.get(apiDogRoute, newDog, function (survey) {
+// 				// DOGS OBJECT
+// 				console.log('SURVEY CB: ', survey)
+// 				var match = makeMatch(survey);
+// 				console.log("Match: " + match);
+// 				if (match.name !== undefined) {
+// 					console.log(match.name);
+// 					dogModalTitle.text('Your dog has a match!');
+// 					modalBody.text('<h3>' + name + 'Is most compatible with: ' + match.name + '!</h3><img src="' + match.photo + '" height="100">');
+// 				} else {
+// 					dogModalTitle.text('Not enough dogs in the park.');
+// 					modalBody.text('Sorry, your pup did not have a compatiable match with any dogs in our database! Come back soon.')
+// 				}
+// 				//once this runs, then have modal show
+// 			}).then(function () {
+// 				modal.show();
+// 				// $('.form')[0].reset();
+// 				$.post(apiDogRoute, newDog);
+// 			});
+// 		} else {
+// 			dogModalTitle.text('Error');
+// 			modalBody.text('Please fill out every question in the survey to submit.');
+// 			modal.show();
+// 		}
+// 	});
+// 	function formIsValid() {
+// 		return (name !== '' && photo !== '' && !isNaN(question1) && !isNaN(question2) && !isNaN(question3) && !isNaN(question4) &&
+// 			!isNaN(question5) && !isNaN(question6) && !isNaN(question7) && !isNaN(question8) && !isNaN(question9) && !isNaN(question10));
+// 	}
+// 	function makeMatch(survey) {
+// 		console.log('SURVEY: ' + survey);
+// 		var lowestDifference = {
+// 			score: 1000,
+// 			dogProfile: null
+// 		};
+// 		for (let i = 0; i < survey.length; i++) {
+// 			console.log(survey[i]);
+// 			var dogTotal = 0;
+// 			var scores = survey[i].scores;
+// 			for (let k = 0; k < scores.length; k++) {
+// 				dogTotal += scores[k];
+// 			}
+// 			console.log('DOG TOTAL: ', dogTotal);
+// 			if (dogTotal < lowestDifference.score) {
+// 				console.log('DOG: ', survey[i]);
+// 				lowestDifference.score = Math.abs(myTotal - dogTotal);
+// 				lowestDifference.dogProfile = survey[i];
+// 			}
+// 		}
+// 		console.log('Lowest: ', lowestDifference.dogProfile);
+// 		// var difference = 50;
+// 		// var matchName;
+// 		// var matchPhoto;
+// 		// survey.forEach(function (dog) {
+// 		// 	var localDiff = Math.abs(newDog.total - dog.total);
+// 		// 	if (localDiff < difference) {
+// 		// 		difference = localDiff;
+// 		// 		matchName = dog.name;
+// 		// 		matchPhoto = dog.photo;
+// 		// 	}
+// 		// 	console.log(matchName); 
+// 		// 	console.log(newDog.total = dog.total); 
+// 		// }); 
+// 		// return {
+// 		// 	name: matchName,
+// 		// 	photo: matchPhoto
+// 		// };
+// 	}
+// </script> --> 
